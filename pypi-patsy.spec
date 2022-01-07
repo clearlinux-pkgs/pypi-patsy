@@ -17,13 +17,13 @@ BuildRequires : buildreq-distutils3
 Provides: patsy
 Provides: patsy-python
 Provides: patsy-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pypi(numpy)
 BuildRequires : pypi(six)
 BuildRequires : pytest
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 # Patsy
