@@ -4,7 +4,7 @@
 #
 Name     : pypi-patsy
 Version  : 0.5.2
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/af/dd/2041fbf661e823599f868c064804e20895b8a98ff428f97bea472734eb5e/patsy-0.5.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/af/dd/2041fbf661e823599f868c064804e20895b8a98ff428f97bea472734eb5e/patsy-0.5.2.tar.gz
 Summary  : A Python package for describing statistical models and for building design matrices.
@@ -14,16 +14,13 @@ Requires: pypi-patsy-license = %{version}-%{release}
 Requires: pypi-patsy-python = %{version}-%{release}
 Requires: pypi-patsy-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: patsy
-Provides: patsy-python
-Provides: patsy-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
 BuildRequires : pypi(numpy)
+BuildRequires : pypi(py)
 BuildRequires : pypi(six)
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 # Patsy
@@ -75,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641466894
+export SOURCE_DATE_EPOCH=1649697823
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
