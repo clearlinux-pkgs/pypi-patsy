@@ -7,7 +7,7 @@
 #
 Name     : pypi-patsy
 Version  : 0.5.4
-Release  : 47
+Release  : 48
 URL      : https://files.pythonhosted.org/packages/f2/cb/87826bbbe3e3448d7a6b9fb28b50edfd747b3ba18062ee056a2eedfaff42/patsy-0.5.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f2/cb/87826bbbe3e3448d7a6b9fb28b50edfd747b3ba18062ee056a2eedfaff42/patsy-0.5.4.tar.gz
 Summary  : A Python package for describing statistical models and for building design matrices.
@@ -61,6 +61,7 @@ python components for the pypi-patsy package.
 Summary: python3 components for the pypi-patsy package.
 Group: Default
 Requires: python3-core
+Provides: pypi(patsy)
 Requires: pypi(numpy)
 Requires: pypi(six)
 
@@ -80,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1702069672
+export SOURCE_DATE_EPOCH=1702967124
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
