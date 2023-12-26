@@ -1,5 +1,5 @@
 PKG_NAME := pypi-patsy
-URL = https://files.pythonhosted.org/packages/f2/cb/87826bbbe3e3448d7a6b9fb28b50edfd747b3ba18062ee056a2eedfaff42/patsy-0.5.4.tar.gz
+URL = https://files.pythonhosted.org/packages/34/b0/f5c1aad0401dbf7349416d0e9a233341343b9c034360285f7a7a66102262/patsy-0.5.5.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

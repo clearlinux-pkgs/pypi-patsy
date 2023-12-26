@@ -6,10 +6,10 @@
 # autospec commit: c1050fe
 #
 Name     : pypi-patsy
-Version  : 0.5.4
-Release  : 48
-URL      : https://files.pythonhosted.org/packages/f2/cb/87826bbbe3e3448d7a6b9fb28b50edfd747b3ba18062ee056a2eedfaff42/patsy-0.5.4.tar.gz
-Source0  : https://files.pythonhosted.org/packages/f2/cb/87826bbbe3e3448d7a6b9fb28b50edfd747b3ba18062ee056a2eedfaff42/patsy-0.5.4.tar.gz
+Version  : 0.5.5
+Release  : 49
+URL      : https://files.pythonhosted.org/packages/34/b0/f5c1aad0401dbf7349416d0e9a233341343b9c034360285f7a7a66102262/patsy-0.5.5.tar.gz
+Source0  : https://files.pythonhosted.org/packages/34/b0/f5c1aad0401dbf7349416d0e9a233341343b9c034360285f7a7a66102262/patsy-0.5.5.tar.gz
 Summary  : A Python package for describing statistical models and for building design matrices.
 Group    : Development/Tools
 License  : BSD-2-Clause
@@ -35,10 +35,10 @@ Matthew Wardrop (@matthewwardrop) and Tomás Capretto (@tomicapretto) have taken
 on responsibility from Nathaniel Smith (@njsmith) for keeping the lights on, but
 no new feature development is planned. The spiritual successor of this project
 is [Formulaic](https://github.com/matthewwardrop/formulaic), and we
-recommend those interested in new feature development contribute there. Those
-whose use-cases continue to be met by `patsy` can continue using this package
-with increased confidence that things will continue to work as is for the
-foreseeable future.
+recommend that users [migrate](https://matthewwardrop.github.io/formulaic/migration/)
+when possible. For the time being, until major software packages have successfully
+transitioned, we will attempt to keep `patsy` working in its current state with
+current releases in the Python ecosystem.
 
 %package license
 Summary: license components for the pypi-patsy package.
@@ -70,10 +70,10 @@ python3 components for the pypi-patsy package.
 
 
 %prep
-%setup -q -n patsy-0.5.4
-cd %{_builddir}/patsy-0.5.4
+%setup -q -n patsy-0.5.5
+cd %{_builddir}/patsy-0.5.5
 pushd ..
-cp -a patsy-0.5.4 buildavx2
+cp -a patsy-0.5.5 buildavx2
 popd
 
 %build
@@ -81,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1702967124
+export SOURCE_DATE_EPOCH=1703607947
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
