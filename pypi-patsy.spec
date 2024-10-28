@@ -7,7 +7,7 @@
 #
 Name     : pypi-patsy
 Version  : 0.5.6
-Release  : 52
+Release  : 53
 URL      : https://files.pythonhosted.org/packages/c6/18/12e76e52d589c4a812a2f1fb2406b486c226b7ac263ac8ef4b5f4bb04058/patsy-0.5.6.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c6/18/12e76e52d589c4a812a2f1fb2406b486c226b7ac263ac8ef4b5f4bb04058/patsy-0.5.6.tar.gz
 Summary  : A Python package for describing statistical models and for building design matrices.
